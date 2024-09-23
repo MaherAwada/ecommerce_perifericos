@@ -1,0 +1,259 @@
+/* Estrutura do site------------------------------------ */
+body {
+	margin: 0 auto;
+	background: #fff;
+	font: 18px 'Trebuchet MS', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+body a:hover{
+	text-decoration: none;
+}
+/* Index------------------------------------ */
+header{
+	height: 235px;
+}
+header ul{
+	list-style: none;
+}
+ul#lista-nav li a img{
+	width: 30px;
+}
+header nav ul li{
+	float: left;
+	margin: -22px 100px 0px 20px;
+}
+header nav ul li a img{
+	display: inline;
+	margin-bottom: -1px;
+	margin-right: 5px;
+}
+ul#lista-nav a{
+	color: #999;
+}
+nav ul li#anuncie{
+	border: 2px solid #999;
+	border-radius: 10px;
+	padding: 3px;
+	margin-right: 250px;
+}
+
+ul#lista-nav li#anuncie a{
+	color: #38b6ff;
+}
+ul#lista-nav2 li input{
+	outline: 0;
+  	border-width: 0 0 2px;
+  	border-color: #999;
+  	margin: 80px 0 0 950px;
+}
+ul#links-pos-banner li a{
+	color: #333;
+}
+ul#links-pos-banner li{
+	float: left;	
+	list-style: none;
+	margin: -20px 0 0 133px;
+}
+div.carousel-item img{
+	height: 600px;
+	width: 1920px;
+}
+footer{
+	padding-bottom: 50px;
+}
+footer#footer ul{
+	list-style: none;
+	margin: 25px 0 0 0 ;
+}
+footer#footer ul li{
+	float: left;
+	margin: 0 0 0 50px;
+}
+footer#footer ul li img{
+	height: 30px;
+}
+input.email-rodape{
+	width: 250px;
+	background-color: #c4c4c4;
+	border: none;
+	padding: 10px;
+}
+button.button-email{
+	outline: 0;
+  	border-width: 0 0 0;
+  	margin: 0 0 0 -4px;
+}
+button.button-email img{
+	background-color: #38b6ff;
+	margin: -10px -6px;
+	height: 44px;
+	margin-top: -14px;
+}
+input#checkbox, label#label-checkbox{
+	margin: 2px 0 0 1330px;
+	display: block;
+}
+hr{
+	width: 1550px;
+	color: #333;
+}
+#footer{
+	margin: 100px 0 0 0;
+}
+#nav-superior{
+	height: 50px;
+	background-color: #333;
+	padding-top: 30px;
+}
+#logo{
+	height: 150px;
+	margin: 20px 0 0 220px;
+}
+#lista-nav2 li{
+	float: left;
+}
+#paragrafo-rodape{
+	margin-left: 100px;
+}
+.ultimo-li{
+	margin-left: 300px;
+}
+.lupa{
+	width: 25px;
+	margin-left: -25px;
+	margin-bottom: 5px;
+}
+.clear{
+	clear: both;
+}
+.carousel-inner{
+	margin-bottom: 70px;
+}
+.primeiro-li-footer{
+	padding-left: 50px;
+}
+.email-rodape{
+	margin-left: 1000px;
+}
+
+/* Contato---------------------*/
+section#section-formulario h1{
+	font-size: 5em;
+	padding-top: 70px;
+	margin-bottom: 50px;
+}
+fieldset form input{
+	outline: 0;
+  	border-width: 0 0 1px;
+  	padding: 5px;
+  	margin: 0 0 10px 0;
+}
+fieldset form button{
+	outline: 0;
+  	border-width: 0px;
+  	background-color: #c4c4c4;
+  	padding: 5px 10px;
+}
+#links-pos-form{
+	padding-top: 80px ;
+}
+.form-display{
+	display: none;
+}
+.form-display1{
+	display: block;
+}
+.slider{
+	margin: 0;
+	padding: 0;
+}
+.img-contato{
+	width: 50px;
+	margin: 25px 0 0 0 ;
+}
+.fix-width{
+	width: 300px;
+}
+.fix-margin{
+	margin-right: 4px;
+}
+
+/****Sobre*********************************************/
+article.sobre p{
+	text-align: center;
+}
+/********************Minha Conta***********************/
+.div-vantagens{
+	float: left;
+	display: inline;
+}
+.div-vantagens button{
+	
+}
+.div-vantagens img{
+	max-width: 120px;
+}
+.div-vantagens p{
+	text-align: center;
+}
+.div-vantagens h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+/************************************Resposividade*****/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	body{
+		font-size: 0.5em;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	body{
+		font-size: 0.5em;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	body{
+		font-size: 0.5em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	body{
+		font-size: 0.5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	body{
+		font-size: 0.5em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

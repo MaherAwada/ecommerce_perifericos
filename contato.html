@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+		<title>Contato | e-Mack</title>
+
+		<!-- Estilo customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<!-- Normalize CSS -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!--Ícone abas-->
+		<link rel="icon" type="image" href="imagens/logopng.png">
+
+		<!--Bootstrap------->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<script type="text/javascript">
+			function mudarClasse(){
+				value = document.getElementById('form-select').value
+
+				if (value == 'email') {
+					document.getElementById('email').className = 'form-display1';
+					document.getElementById('telefone').className = 'form-display';
+					document.getElementById('endereco').className = 'form-display';
+
+				}
+				if (value == 'telefone') {
+					document.getElementById('email').className = 'form-display';
+					document.getElementById('telefone').className = 'form-display1';
+					document.getElementById('endereco').className = 'form-display';
+				}
+				if (value == 'endereco') {
+					document.getElementById('email').className = 'form-display';
+					document.getElementById('telefone').className = 'form-display';
+					document.getElementById('endereco').className = 'form-display1';
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header><!--início header-------------------------------------------------------------------->
+			<nav id="nav-superior">
+				<ul id="lista-nav">
+					<li id="anuncie">
+						<a href="#">Anuncie Aqui!</a>
+					</li>
+					<li class="">
+						<a href="#"><img src="imagens/controle.png">JOGOS</a>
+					</li>
+					<li class="">
+						<a href="#"><img src="imagens/headset.png">PERIFÉRICOS</a>
+					</li>
+					<li class="">
+						<a href="#"><img src="imagens/cpu.png">HARDWARE</a>
+					</li>
+					<li class="ultimo-li">
+						<a href="minha_conta.html"><img src="imagens/login.png">MINHA CONTA</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul id="lista-nav2">
+				<li>
+					<a href="index.html"><img id="logo" src="imagens/e-Mack1.png"></a>
+				</li>
+				<li>
+					<input type="text" name="pesquisa" placeholder="PESQUISA"><img src="imagens/lupa.png" class="lupa" alt="pesquisa">
+				</li>
+			</ul>
+		</header><!--final header------------------------------------------------------->
+
+		<span class="clear"></span>
+
+		<section id="section-formulario" class="container"><!--Formulários ---------------------------->
+			<h1>Vamos<br>conversar?</h1>
+	      	<select id="form-select" onclick="mudarClasse()">
+		      	<option selected="" disabled="" value="">O que você gostaria de fazer?</option>
+		      	<option value="email">Gostaria de enviar um e-mail</option>
+		      	<option value="telefone">Prefiro fazer/receber uma ligação</option>
+		      	<option value="endereco">Quero ir até vocês</option>
+	      	</select>
+
+	      	<fieldset>
+		      	<form id="email" class="form-display">
+		      		<input type="text" name="email" placeholder="Infome seu e-mail" required><br>
+		      		<input type="text" name="nome" placeholder="Informe seu nome" required><br>
+		      		<input type="text" name="telefone" placeholder="Informe telefone para contato(opcional)" class="fix-width"><br>
+		      		<input type="checkbox" name="wathsapp">Permitir mensagens via Wathsapp<br>
+		      		<input type="radio" name="motivo" value="" class="fix-margin">Elogio
+		      		<input type="radio" name="motivo" value="" class="fix-margin">Reclamação
+		      		<input type="radio" name="motivo" value="" class="fix-margin">Dúvida
+		      		<input type="radio" name="motivo" value="" class="fix-margin">Outros<br>
+		      		<textarea rows="10" cols="25" placeholder="Escreva sua mensagem" required></textarea><br>
+		      		<span>Avalie sua experiência?<br>Insatisfeito</span>
+		      		<input type="range" min="0" max="100" step="any" value="50" id="satisfacao" class="slider">
+		      		<span>Muito satisfeito</span><br>
+		      		<button type="submit">Enviar</button>
+		      	</form>
+
+		      	<form id="telefone" class="form-display">
+		      		<input type="text" name="nome2" placeholder="Infome seu nome" required><br>
+		      		<input type="text" name="telefone2" placeholder="Informe seu telefone" required><br>
+		      		<p>Prefiro que me ligue pela:</p>
+		      		<input type="radio" name="horario">Manhã<br>
+		      		<input type="radio" name="horario">Tarde<br>
+		      		<input type="radio" name="horario">Noite<br>
+		      		
+		      		<p>
+		      			<img src="imagens/telefone.png" class="img-contato">
+		      			(11) 2114-8000 (Capital de São Paulo e região)
+		      		</p>
+		      		<button type="submit">Enviar</button>
+		      	</form>
+
+		      	<form id="endereco" class="form-display">
+		      		<p>
+		      			<strong>Nosso endereço:</strong><br>
+		      			R. da Consolação, 930 - Consolação, São Paulo - SP, 01302-907<br>
+		      			<strong>Horário de Funcionamento</strong><br>
+		      			Seg a Sex: 07:00 - 23:00<br>
+		      			Sáb e Dom: 07:00 - 12:00<br>
+		      			(Horário de Brasília)
+		      		</p>
+
+		      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5677171830757!2d-46.652553284540595!3d-23.548045466986906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584992d1355b%3A0x2619a4227c175a85!2sUniversidade%20Presbiteriana%20Mackenzie!5e0!3m2!1spt-BR!2sbr!4v1647533166536!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		      		
+		      	</form><!-- Final Fomulários---------------------------------->
+	      	</fieldset>
+	    </section><!--/Formulário -->
+
+	    <section id="links-pos-form"><!-- Início Links após banner-->
+	    	<div>
+	    		<ul id="links-pos-banner">
+	    			<li>
+	    				<a href="sobre.html">SOBRE</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">MAPA DO SITE</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">BLOG</a>
+	    			</li>
+	    			<li>
+	    				<a href="contato.html">CONTATO</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	    </section><!-- Final Links após banner-->
+	    
+	    <span class="clear"></span>
+
+	    <footer id="footer"><!--Inicio footer------->
+	    	<hr>
+	    	<ul>
+	    		<li>
+	    			<a href="#"><img src="imagens/facebook.png" class="primeiro-li-footer"></a>
+	    		</li>
+	    		<li>
+	    			<a href="#"><img src="imagens/twitter.png"></a>
+	    		</li>
+	    		<li>
+	    			<a href="#"><img src="imagens/instagram.png"></a>
+	    		</li>
+	    	</ul>
+
+	    	<input type="text" name="email" class="email-rodape" placeholder="DIGITE O ENDEREÇO DE E-MAIL">
+	    	<button class="button-email"><img src="imagens/button-email.png"></button>
+	    	<input type="checkbox" id="checkbox" name="checkbox"><label  id="label-checkbox" for="checkbox">Sim, quero receber notícias e e-mails sobre<br> produtos.</label>
+	    	<p id="paragrafo-rodape">&copy;2022 e-Mack. Todos os direitos reservados</p>
+	    </footer><!--Final footer------->
+
+		<!-- JavaScript (Opcional) -->
+	    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	</body>
+</html>
